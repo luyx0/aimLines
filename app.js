@@ -3,4 +3,7 @@ window.onload = function () {
   const context = canvas.getContext("2d");
   let myCanvas = new Canvas();
   myCanvas.init(context);
+  document.getElementById("clear").addEventListener("click", () => {
+    myCanvas.clear();
+  });
 };
